@@ -6,16 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My FlaskApp</title>
     <link rel="stylesheet" href="/public/styles/bootstrap.min.css">
+    <script src="/public/scripts/jquery-3.4.1.min.js" defer></script>
+    <script src="/public/scripts/popper.min.js" defer></script>
+    <script src="/public/scripts/bootstrap.min.js" defer></script>
 </head>
 <body>
     {% include 'includes/_navbar.html' %}
 
     <div class="container">
+        {% include 'includes/_messages.html' %}
         {% block body %}    {% endblock %}
     </div>
 
-    <script src="/public/scripts/jquery-3.4.1.min.js"></script>
-    <script src="/public/scripts/popper.min.js"></script>
-    <script src="/public/scripts/bootstrap.min.js"></script>
 </body>
 </html>
